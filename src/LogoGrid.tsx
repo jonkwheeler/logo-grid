@@ -16,7 +16,7 @@ const defaultProps: LogoGridProps = {
   withOffset: false,
 }
 
-const LogoGrid = ({
+const LogoGrid: React.FunctionComponent<LogoGridProps> = ({
   className,
   columns,
   desktopAlign,
@@ -30,7 +30,7 @@ const LogoGrid = ({
   parentWidth,
   withOffset,
   ...rest
-}): React.FunctionComponent<LogoGridProps> => {
+}) => {
   const newProps: LogoGridNewProps = {}
 
   newProps.singleRow = logos.length <= columns
