@@ -2,21 +2,35 @@ import * as React from 'react'
 import { LogoGridNewProps, LogoGridProps } from './props'
 import { StyledLogo, StyledLogoContainer } from './styled'
 
-export const LogoGrid = ({
-  className = '',
-  columns = 5,
-  desktopAlign = 'center',
-  desktopPaddingScale = 1,
+const defaultProps: LogoGridProps = {
+  className: '',
+  columns: 5,
+  desktopAlign: 'center',
+  desktopPaddingScale: 1,
+  logos: [{ logo: 'https://placeimg.com/640/480/nature', initialWidth: 100 }],
+  mobileAlign: 'left',
+  mobileBreakpoint: 767,
+  mobileScale: 1,
+  mobilePaddingScale: 1,
+  parentWidth: 1000,
+  withOffset: false,
+}
+
+const LogoGrid: React.FunctionComponent<LogoGridProps> = ({
+  className,
+  columns,
+  desktopAlign,
+  desktopPaddingScale,
   fillColor,
-  logos = [{ logo: 'https://placeimg.com/640/480/nature', initialWidth: 100 }],
-  mobileAlign = 'left',
-  mobileBreakpoint = 767,
-  mobileScale = 1,
-  mobilePaddingScale = 1,
-  parentWidth = 1000,
-  withOffset = false,
+  logos,
+  mobileAlign,
+  mobileBreakpoint,
+  mobileScale,
+  mobilePaddingScale,
+  parentWidth,
+  withOffset,
   ...rest
-}: LogoGridProps) => {
+}) => {
   const newProps: LogoGridNewProps = {}
 
   newProps.singleRow = logos.length <= columns
@@ -77,3 +91,7 @@ export const LogoGrid = ({
     </StyledLogoContainer>
   )
 }
+
+LogoGrid.defaultProps = defaultProps
+
+export { LogoGrid }
