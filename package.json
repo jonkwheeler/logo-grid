@@ -1,6 +1,6 @@
 {
   "name": "logo-grid",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Logo Grid is a React-based component to help quickly output perfectly responsive logos to your page.",
   "author": "Jon K. Wheeler",
   "license": "MIT",
