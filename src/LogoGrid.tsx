@@ -16,7 +16,7 @@ const defaultProps: LogoGridProps = {
   withOffset: false,
 }
 
-const LogoGrid: React.FunctionComponent<LogoGridProps> = ({
+const LogoGrid: React.FunctionComponent<LogoGridProps> & { defaultProps: Partial<LogoGridProps> } = ({
   className,
   columns,
   desktopAlign,
