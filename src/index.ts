@@ -1,2 +1,1 @@
-export { LogoGrid, LogoGrid as default } from './LogoGrid'
-export { LogoGridProps } from './props'
+export { LogoGrid, LogoGrid as default, LogoGridProps } from './LogoGrid'
