@@ -69,7 +69,7 @@
     "react-dom": "^16.8.6",
     "release-it": "^12.0.1",
     "storybook": "^1.0.0",
-    "styled-components": "^4.2.0",
+    "styled-components": "^5.0.0-beta.8",
     "ts-loader": "^6.0.0",
     "tscpaths": "^0.0.7",
     "tslint": "^5.16.0",
@@ -78,9 +78,7 @@
     "typescript": "^3.4.5",
     "webpack": "^4.31.0"
   },
-  "peerDependencies": {
-    "styled-components": ">= 4"
-  },
+  "peerDependencies": {},
   "bugs": {
     "url": "https://github.com/jonkwheeler/logo-grid/issues"
   },
