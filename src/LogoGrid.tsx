@@ -32,7 +32,7 @@ interface LogoItem {
    *
    * <LogoGrid logos={logoList} />
    */
-  logo?: React.ReactNode | string
+  logo?: React.ReactNode | string | any
 }
 
 export interface LogoGridProps {
