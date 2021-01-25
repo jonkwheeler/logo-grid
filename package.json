@@ -94,7 +94,7 @@
   "peerDependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "styled-components": "^5.2.1"
+    "styled-components": "^4"
   },
   "bugs": {
     "url": "https://github.com/jonkwheeler/logo-grid/issues"
